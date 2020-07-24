@@ -89,7 +89,7 @@
                                         </tr>
                                          <tr>
                                             <td>
-                                               <input type="text" class="form-control" name="teaches"  value="<?php echo $lecturer; ?>" > 
+                                               <input type="text" class="form-control" name="lecturer"  value="<?php echo $lecturer; ?>" > 
                                             </td>
                                         </tr>
                                         <tr>
@@ -153,13 +153,12 @@
                                           <?php
                                        }
                                        else{
-                                          mysqli_query($link, "insert into t_issuebook values('','$_SESSION[utype]','$_SESSION[idno]','$_POST[name]','$_POST[teaches]','$_POST[phone]','$_POST[email]','$_POST[booksname]','$_POST[booksissuedate]','$_POST[booksreturndate]','$_SESSION[tusername]') ");
+                                          mysqli_query($link, "insert into t_issuebook values('','$_SESSION[utype]','$_SESSION[idno]','$_POST[name]','$_POST[lecturer]','$_POST[phone]','$_POST[email]','$_POST[booksname]','$_POST[booksissuedate]','$_POST[booksreturndate]','$_SESSION[tusername]') ");
                                           mysqli_query($link, "update add_book set books_availability=books_availability-1 where books_name='$_POST[booksname]'");
 
                                           ?>
                                               <script type="text/javascript">
-                                                  alert("books issued successfully");
-                                                  window.location.href=window.location.href;
+                                                  alert("books issued successfully")
                                               </script>
                                         <?php
                                         }

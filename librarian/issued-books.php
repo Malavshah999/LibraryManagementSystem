@@ -83,7 +83,7 @@
 														echo "<td>";
 												?>
 															<ul>
-																<li><a style="color: #000;" href="return.php?id=<?php echo $row["id"]; ?>"><i class="fas fa-undo-alt"></i></a></li>
+																<li><a style="color: #000;" href="t_return.php?id=<?php echo $row["id"]; ?>"><i class="fas fa-undo-alt"></i></a></li>
 																<li><a href="delete.php?id=<?php echo $row["id"]; ?>"><i class="fas fa-trash"></i></a></li>
 															</ul> 
 												<?php 

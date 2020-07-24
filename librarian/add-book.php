@@ -105,4 +105,8 @@
 				mysqli_query($link, "insert into add_book values('','$_POST[booksname]','$imagepath','$_POST[bauthorname]','$_POST[bpubname]','$_POST[bpurcdate]','$_POST[bprice]','$_POST[bquantity]','$_POST[bavailability]','$_SESSION[username]','$filepath')");
 
             }
-        ?>			
+        ?>		
+	<?php 
+		include 'inc/footer.php';
+	 ?>
+ 				

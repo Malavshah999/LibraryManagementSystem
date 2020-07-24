@@ -31,13 +31,10 @@
             $error_reg = "This regno already registered";
         }
 		elseif(strlen($username) < 6 ){
-            $error_ua ="<b>Username too short !</b> <span>Your username must be 6-10 character </span>";
-        }
-		elseif(strlen($username) > 10 ){
-            $error_ua ="<b>Username too big !</b> <span>Your username must be 6-10 character </span>";
+            $error_ua ="<b>Username too short !</b> <span>Your username must be more than 6 character </span>";
         }
 		elseif(strlen($password) < 6 ){
-            $error_pw ="<b>Password too short !</b> <span>Your password must be 6-16 character </span>";
+            $error_pw ="<b>Password too short !</b> <span>Your password must be more than 6 character </span>";
         }
 		elseif (filter_var($email, FILTER_VALIDATE_EMAIL)== false) {
 				$e_msg = "<strong>Error ! </strong> <span>Email Address Not Valid </span>";
